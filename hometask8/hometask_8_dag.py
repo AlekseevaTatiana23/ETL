@@ -25,7 +25,7 @@ def WetherETL():
         task_id='send_message_telegram',
         telegram_conn_id='telegram_conn',
         token='7724387628:AAFT9kOveLSmsswKceHqGuO4x3qRjj1j_wU',
-        chat_id='721101124',
+        chat_id='*********',
         text='Wether in Moscow \nYandex: ' + "{{ ti.xcom_pull(task_ids=['yandex_wether'],key='wether')[0]}}" + " degrees" +
         "\nOpen wether: " + "{{ ti.xcom_pull(task_ids=['open_wether'],key='open_wether')[0]}}" + " degrees",
     )
